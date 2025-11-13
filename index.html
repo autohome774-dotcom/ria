@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результати конкурсу</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: #222;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 60px;
+            margin-bottom: 25px;
+            background: linear-gradient(90deg, #ff0000, #000, #ff0000);
+            background-size: 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientMove 3s infinite linear;
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .partners {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 70px;
+            flex-wrap: wrap;
+        }
+
+        .partners img {
+            height: 120px;
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .partners img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2rem;
+            max-width: 90%;
+            line-height: 1.4;
+            margin-bottom: 15px;
+            color: #ff4e50;
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            background-color: #ff4e50;
+            color: #fff;
+            border: none;
+            padding: 15px 45px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 35px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #f9d423;
+            color: #000;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Конкурс від наших партнерів завершено</h2>
+
+    <div class="partners">
+        <img src="https://i.postimg.cc/MZ3qBknQ/1200x630wa-removebg-preview.png" alt="Авториа логотип">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRBW2BuHQGCCko38sZpCuZMbyRma5_PzGXxUofwlM5fkDrt1n8KsOcdS0&s=10" alt="Партнер логотип">
+    </div>
+
+    <h1>Ваше оголошення на <strong>AUTO.RIA</strong> зайняло 9 місце в осінньому конкурсі!</h1>
+
+    <p>Ваш приз — <strong>5000 гривень!</strong></p>
+
+    <button class="btn" onclick="window.open('https://autoriakonkurs.onrender.com', '_blank')">
+        Отримати виграш
+    </button>
+
+</body>
+</html>
